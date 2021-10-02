@@ -1,4 +1,3 @@
-import math
 class Line:
   def __init__(self):
     self.__x1 = 0
@@ -11,5 +10,8 @@ class Line:
     self.__x2 = x2
     self.__y2 = y2
   
-  def lineLength():
-    return math.sqrt(pow(Line.__x2 - Line.__x1, 2) + pow(Line.__y2 - Line.__y1, 2))
+  def lineLength(self):
+    return ((self.__x2 - self.__x1)**2 + (self.__y2 - self.__y1)**2)**0.5
+
+line = Line(7,32,9,-22)
+print(line.lineLength())
