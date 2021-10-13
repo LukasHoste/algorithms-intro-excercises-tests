@@ -1,6 +1,6 @@
 class BinaryCounter:
   def __init__(self):
-    self.__ledBinary = '1111'
+    self.__ledBinary = '0000'
 
   def decimal(self):
     # decimal = 0
