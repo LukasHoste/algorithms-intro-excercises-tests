@@ -5,4 +5,4 @@ def sumOfNumbersDivisibleBy7Or9(start, end):
       sum += i
   return sum
   
-print(sumOfNumbersDivisibleBy7Or9(0,9))
+print(sumOfNumbersDivisibleBy7Or9(9,20))
