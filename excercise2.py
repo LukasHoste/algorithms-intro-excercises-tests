@@ -1,4 +1,4 @@
-def SumOfLucas(highestNumber):
+def sumOfLucas(highestNumber):
   previousNumber = 2
   currentNumber = 1
   sum = 1
@@ -10,4 +10,4 @@ def SumOfLucas(highestNumber):
       sum += currentNumber
   return sum    
 
-print(SumOfLucas(4000000))
+print(sumOfLucas(4000000))
