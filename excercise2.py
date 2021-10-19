@@ -8,6 +8,21 @@ def sumOfLucas(highestNumber):
     current += 1
   return sum
 
+
+def sumOfEvenLucasNumbers(highestNumber):
+  n = 0
+  sum = 0
+  current = 2
+  if (highestNumber == 2):
+    sum = 2
+  # sum = 2
+  while current < highestNumber:
+    if current % 2 == 0:
+      sum += current
+    n += 1
+    current = luc(n)
+  return sum
+
   # previousNumber = 2
   # currentNumber = 1
   # sum = 1
@@ -27,4 +42,4 @@ def luc(n):
   else:
     return luc(n-1) + luc(n-2)
 
-print(sumOfLucas(4))
+print(sumOfEvenLucasNumbers(4))
